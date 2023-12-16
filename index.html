@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- ÍCONE PARA A ABA DO NAVEGADOR -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
+
+
+    <title>Dream Wallet :: Home</title>
+
+    <!-- GOOGLE FONTS: MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <!-- BOOTSTRAP     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<main>
+
+    <header>
+        <!-- INÍCIO DA NAVBAR -->
+        <div class="container-fluid bg-primary fixed-top">
+
+            <nav class="navbar navbar-expand-lg bg-primary text-light">
+
+
+                <div class="container-fluid">
+
+                    <!-- LOGO + NOME DA EMPRESA -->
+                    <a class="navbar-brand text-light" href="#"><img src="./images/logo.png" alt="" width="24px">
+                        DreamWallet</a>
+
+                    <!-- MENU HAMBURGUER -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" data-bs-theme=dark aria-label="Toggle navigation">
+                        <span><img src="./images/menu-hamburguer.png" alt="" width="24px"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <!-- ITEM 1 - HOME -->
+                            <li class="nav-item padding-nav">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Ferramentas</a>
+                            </li>
+
+                            <!-- ITEM 2 - DROPDOWN -->
+                            <li class="nav-item padding-nav dropdown">
+
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Conteúdos
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item px-3" href="#">Como gastar menos</a>
+                                    </li>
+                                    <li><a class="dropdown-item px-3" href="#">Blog</a></li>
+
+                                    <li><a class="dropdown-item px-3" text-light href="#">Saiba mais</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- ITEM 3 - AJUDA -->
+                            <li class="nav-item padding-nav">
+                                <a class="nav-link text-light" href="#">Ajuda</a>
+                            </li>
+
+                        </ul>
+
+                        <!-- INÍCIO DO BOTÃO DE LOGIN -->
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item padding-nav btn-login">
+
+                                    <a href="" class="nav-link me-1 custom-login-link color-white"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Fazer Login</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- FIM BOTÃO DE LOGIN -->
+
+                </div>
+
+
+            </nav>
+        </div>
+        <!-- FIM DA NAVBAR -->
+
+
+        <!-- INÍCIO DA MODAL - LOGIN -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Fazer Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- INPUT - USUARIO -->
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Senha</label>
+                        </div>
+
+                        <div>
+                            <p class="text-sm-end fs-7 m-3"><a href="">Esqueci a senha</a></p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM DA MODAL - LOGIN -->
+
+    </header>
+
+    <main>
+        <section>
+            <!-- INÍCIO DO BANNER -->
+            <div class="container-fluid banner text-light">
+
+                <div class=" my-container ">
+
+                    <div class=" row">
+
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 p-4 d-flex align-items-center">
+                            <div class="d-flex flex-column ">
+                                <h1 class="mt-4 me-4 text-lg">DreamWallet é um aplicativo feito para te ajudar a
+                                    realizar
+                                    seus
+                                    sonhos.
+                                </h1>
+                                <p class="mt-4 me-4 text-md">Descubra como podemos ser a sua solução em curto, médio e
+                                    longo
+                                    prazo, de
+                                    maneira descomplicada e eficiente. Estamos aqui para simplificar sua jornada,
+                                    tornando
+                                    ela
+                                    mais
+                                    prática e acessível.</p>
+                                <p><button type="button" class="btn btn-primary mt-3 btn-lg btn-login">Quero
+                                        conhecer!</button>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 hide-banner">
+                            <figure class="img-banner m-4">
+                                <img src="./images/banner-img-3.svg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM DO BANNER -->
+        </section>
+
+        <section>
+
+            <!-- iNÍCIO DO GRID DOS FUNFACTS -->
+            <div class="container-fluid">
+
+                <div class="container p-4">
+
+                    <div class="row">
+
+                        <!-- Primeira coluna -->
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-4 mb-4">
+                            <div class="d-flex flex-column ">
+                                <figure class="d-flex justify-content-center">
+                                    <img src="./images/icon-money-8.svg" alt="" class="icon-funfacts">
+                                </figure>
+                                <h3 class="text-center">Economize!</h3>
+                                <p class="text-center ms-4 me-4">Te ajudamos a economizar o seu dinheiro suado,
+                                    transformando seus sonhos em realidade.</p>
+                            </div>
+                        </div>
+                        <!-- Fim primeira coluna -->
+
+                        <!-- Segunda coluna -->
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mt-4 mb-4">
+                            <div class="d-flex flex-column ">
+                                <figure class="d-flex justify-content-center">
+                                    <img src="./images/icon-money-9.svg" alt="" class="icon-funfacts">
+                                </figure>
+                                <h3>Smart money!</h3>
+                                <p class="text-center ms-4 me-4">Você usando o seu dinheiro de forma consciente e
+                                    inteligente!</p>
+                            </div>
+                        </div>
+                        <!-- Fim segunda coluna -->
+
+                        <!-- Terceira coluna -->
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mt-4 mb-4">
+                            <div class="d-flex flex-column ">
+                                <figure class="d-flex justify-content-center">
+                                    <img src="./images/icon-money-6.svg" alt="" class="icon-funfacts">
+                                </figure>
+                                <h3>Sonhe alto</h3>
+                                <p class="text-center ms-4 me-4">A DreamWallet te ajudará a realizar todos os seus
+                                    sonhos em apenas um clique.</p>
+                            </div>
+
+                        </div>
+                        <!-- Fim terceira coluna -->
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- FIM DO GRID DOS FUNFACTS -->
+        </section>
+
+        <section>
+            <!-- CARROSSEL -->
+            <div class="container-fluid p-0">
+
+                <div id="carouselExampleCaptions" class="carousel slide my-carrossel">
+
+                    <!-- BOTÕES DO MEIO  -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- COMEÇO DOS ITENS DENTRO DO CARROSSEL -->
+                    <div class="carousel-inner">
+
+                        <!-- PRIMEIRA IMAGEM -->
+                        <div class="carousel-item active">
+                            <a href=""><img src="./images/carrossel-1.svg" class="d-block" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block bg-carrossel">
+                                <h5 class="">Fechou este mês no vermelho?</h5>
+                                <p class="">Clique aqui para entender como você pode começar a economizar a partir de
+                                    agora.</p>
+                            </div>
+                        </div>
+
+                        <!-- SEGUNDA IMAGEM -->
+                        <div class="carousel-item">
+                            <a href=""><img src="./images/carrossel-2.svg" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block bg-carrossel">
+                                <h5>Como você está se preparando para realizar seus sonhos?</h5>
+                                <p class="my-shadow">Entenda como podemos te ajudar a economizar para que você consiga
+                                    realizar seus desejos!</p>
+                            </div>
+                        </div>
+
+                        <!-- TERCEIRA IMAGEM -->
+                        <div class="carousel-item">
+                            <a href=""><img src="./images/carrossel-3.svg" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block bg-carrossel">
+                                <h5 class="my-shadow">Como você está usando seu cartão de crédito?</h5>
+                                <p class="my-shadow">Entenda como usar o seu cartão de crédito da melhor forma.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES DE "ANTERIOR" (<) E "PRÓXIMO" (>) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <!-- iNÍCIO DOS CARDS DO GRID -->
+            <div class="container-fluid">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- Primeira coluna -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mt-4 mb-4 text-light d-flex align-items-center">
+                            <h2 class="text-primary">Confira alguns artigos que podem te ajudar!</h2>
+                        </div>
+                        <!-- Fim primeira coluna -->
+
+                        <!-- Segunda coluna -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center mt-4 mb-4">
+                            <div class="card" style="height: 100%;">
+                                <img src="./images/img-card-1.jpeg" class="card-img-top"
+                                    alt="Caderno e celular em uma mesa">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Fechou este mês no vermelho?</h5>
+                                    <p class="card-text">Confira algumas dicas de como economizar dinheiro para o começo
+                                        do próximo ano! Clique no botão abaixo e confira.</p>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-primary">Quero saber mais!</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Fim segunda coluna -->
+
+                        <!-- Terceira coluna -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center mt-4 mb-4">
+                            <div class="card" style="height: 100%;">
+                                <img src="./images/img-card-2.jpeg" class="card-img-top"
+                                    alt="Caderno e celular em uma mesa">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Como você está usando seu cartão de crédito?</h5>
+                                    <p class="card-text">Você sabia que as faturas dos cartões de crédito são os maiores
+                                        motivos
+                                        de dívidas entre os brasileiros? Entenda melhor.</p>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-primary">Quero saber mais!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim terceira coluna -->
+
+                        <!-- Quarta coluna -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 text-center mt-4 mb-4">
+                            <div class="card" style="height: 100%;">
+                                <img src="./images/img-card-3.jpeg" class="card-img-top"
+                                    alt="Caderno e celular em uma mesa">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Vale a pena investir em criptomoedas?</h5>
+                                    <p class="card-text">Trouxemos um resumão do que são essas famosas criptomoedas e se
+                                        vale ou
+                                        não a pena investir nelas neste momento. Confira!</p>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-primary">Quero saber mais!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim quarta coluna -->
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- FIM DOS CARDS -->
+        </section>
+
+
+        <section>
+            <!-- INPUT - NEWSLETTER -->
+            <div class="row p-4 bg-primary">
+
+                <div class="col-md-1 col-lg-2">
+
+                </div>
+
+
+                <div class="col-md-10 col-lg-8 p-4 text-light">
+
+                    <h4>Junte-se a mais de 100.000 pessoas!</h4>
+                    <p>Entre para a nossa lista para começar a receber conteúdos exclusivos e começar a realizar seus
+                        sonhos hoje.
+                    </p>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="text-dark">Digite seu e-mail aqui</label>                
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary mt-3 btn-login btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#modalNewsletter">Me
+                        inscrever</button>
+                </div>
+
+                <div class="col-md-1 col-lg-2">
+
+                </div>
+            </div>
+
+
+
+            <!-- MODAL NEWSLETTER -->
+            <div class="modal fade" id="modalNewsletter" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inscrição realizada!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <h2>Obrigado por se inscrever!</h2>
+                            <p>Você passará a receber e-mails com as nossas novidades e promoções!</p>
+
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM DA MODAL -->
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="bg-footer text-light p-4">
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 p-4">
+                    <p class="text-center">Disponível agora para download!</p>
+
+                    <figure class="d-flex justify-content-center">
+                        <a href=""><img src="./images/app-store.svg" alt="" class="img-fluid app-stores"></a>
+                        <a href=""><img src="./images/google-play.svg" alt="" class="img-fluid app-stores"></a>
+                    </figure>
+                </div>
+
+                <div class="col-md-6 col-lg-4 p-4">
+                    <p class="d-flex justify-content-center">Nos siga nas redes sociais!</p>
+                    <figure class="d-flex justify-content-center">
+                        <a href=""><img src="./images/icon-facebok.png" alt="" class="img-fluid social-media me-5"></a>
+                        <a href=""><img src="./images/icon-instagram.png" alt=""
+                                class="img-fluid social-media me-5"></a>
+                        <a href=""><img src="./images/icon-linkedin.png" alt="" class="img-fluid social-media me-5"></a>
+                        <a href=""><img src="./images/icon-twitter.png" alt="" class="img-fluid social-media me-5"></a>
+                        <a href=""><img src="./images/icon-youtube.png" alt="" class="img-fluid social-media"></a>
+                    </figure>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 p-4">
+                    <h3 class="text-center">DreamWallet ®</h3>
+                    <p class="text-center">Todos os direitos reservados</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    </body>
+
+</html>
